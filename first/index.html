@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="utf-8">
+		<title>中国古诗词文化</title>
+		<link rel="stylesheet" href="css/jquery.fullPage.css">
+		<link rel="stylesheet" href="css/swiper.min.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/animate.css" />
+		<link rel="stylesheet" type="text/css" href="css/less.css"/>
+		<style>
+			.section {
+				font: 40px "华文行楷";
+				color: #000;
+			}
+			
+			.section p {
+				float: left;
+				padding: 0 20px;
+				display: none;
+			}
+			
+			.section p:last-child {
+				margin-top: 80px;
+			}
+			
+			.writer {
+				margin-top: 50px;
+				font-size: 20px;
+			}
+			
+			.section p:first-child {
+				margin-left: 100px;
+			}
+			
+			.section p span {
+				display: block;
+			}
+			/*swiper*/
+			
+			.swiper-container {
+				width: 100%;
+				height: 300px;
+				margin: 20px auto;
+			}
+			
+			.swiper-slide {
+				width: 200px;
+				/* Center slide text vertically */
+				display: -webkit-box;
+				display: -ms-flexbox;
+				display: -webkit-flex;
+				display: flex;
+				-webkit-box-pack: center;
+				-ms-flex-pack: center;
+				-webkit-justify-content: center;
+				justify-content: center;
+				-webkit-box-align: center;
+				-ms-flex-align: center;
+				-webkit-align-items: center;
+				align-items: center;
+			}
+			
+			.swiper-slide img {
+				width: 200px;
+				height: 300px;
+				box-shadow: 10px 10px 10px #666;
+			}
+		</style>
+
+		<script src="js/jquery-1.8.3.min.js"></script>
+		<script src="js/jquery.fullPage.min.js"></script>
+		<script type="text/javascript" src="js/wow.js"></script>
+
+		<script src="http://cdn.staticfile.org/jquery-easing/1.3/jquery.easing.min.js"></script>
+		<script>
+			$(function() {
+				$('#dowebok').fullpage({
+					sectionsColor: [],
+					continuousVertical: true,
+					afterLoad: function(anchorLink, index) {
+						if(index == 2) {
+							$('.section2').find('.lisi_01').delay(500).fadeIn(3000);
+							$('.section2').find('.lisi_02').delay(1500).fadeIn(3000);
+							$('.section2').find('.lisi_03').delay(2500).fadeIn(3000);
+							$('.section2').find('.lisi_04').delay(3500).fadeIn(3000);
+							$('.section2').find('.lisi_05').delay(4500).fadeIn(3000);
+							$('.section2').find('.lisi_06').delay(5500).fadeIn(3000);
+						}
+						if(index == 3) {
+							$('.section3').find('.dlh_01').delay(500).fadeIn(3000);
+							$('.section3').find('.dlh_02').delay(1500).fadeIn(3000);
+							$('.section3').find('.dlh_03').delay(2500).fadeIn(3000);
+							$('.section3').find('.dlh_04').delay(3500).fadeIn(3000);
+						}
+						if(index == 4) {
+							$('.section4').find('.love_01').delay(500).fadeIn(3000);
+							$('.section4').find('.love_02').delay(1500).fadeIn(3000);
+							$('.section4').find('.love_03').delay(2500).fadeIn(3000);
+							$('.section4').find('.love_04').delay(3500).fadeIn(3000);
+							$('.section4').find('.love_05').delay(4500).fadeIn(3000);
+						}
+					},
+					onLeave: function(index, direction) {
+						if(index == '2') {
+							$('.section2').find('p').delay(500).fadeOut()
+						}
+						if(index == '3') {
+							$('.section3').find('p').delay(500).fadeOut()
+						}
+						if(index == '4') {
+							$('.section4').find('p').delay(500).fadeOut()
+						}
+					}
+
+				});
+				
+				
+//				自动滚动
+//				setInterval(function() {
+//					$.fn.fullpage.moveSectionDown();
+//				}, 10000);
+			});
+		</script>
+	</head>
+
+	<body>
+		<!--nav 开始-->
+		<div class="nav wow bounceInDown">
+			
+			<p class="login wow fadeInDown" data-wow-delay="2s"><a href="#">登录</a></p>
+			
+			
+			<ul>
+				<li class="wow fadeInDown" data-wow-delay="1s">
+					<a href="#">诗词全集</a>
+					<ul class="shici">
+						<li>
+							<a href="http://baike.baidu.com/link?url=CM7CiGpEdD8OLX2MvzlGGaV6If2HMDoYS9WQL3NNPpXd-HUC-4ab8icJpyGOmEE3zNjp2q_OtLJb5rVLJYBE79vc4ZhcCZjQvcnVY60HHfkszCtROOI_8V04r0Mf-OW-r6hG8u7rcwbXwwJiwLCRpfT5Hoqcahp0ervefPqm3Fz989xAuBLeUFnWcuuPXLYy" target="_blank">仓央嘉措诗集</a>
+						</li>
+						<li>
+							<a href="http://baike.baidu.com/view/319268.htm" target="_blank">李白诗集</a>
+						</li>
+						<li>
+							<a href="http://baike.baidu.com/view/189009.htm" target="_blank">杜甫诗集</a>
+						</li>
+						<li>
+							<a href="http://baike.baidu.com/view/5082881.htm" target="_blank">柳永词集</a>
+						</li>
+						<li>
+							<a href="http://baike.baidu.com/view/36144.htm" target="_blank">孟浩然诗集</a>
+						</li>
+						<li>
+							<a href="http://baike.baidu.com/view/11088440.htm" target="_blank">元稹诗词</a>
+						</li>
+						<li>
+							<a href="http://baike.baidu.com/item/%E5%94%90%E8%AF%97%E4%B8%89%E7%99%BE%E9%A6%96/18677" target="_blank">唐诗三百首</a>
+						</li>
+					</ul>
+				</li>
+				<li class="wow fadeInDown" data-wow-delay="1s">
+					<a href="#">诗词作者</a>
+					<ul class="shici">
+						<li>
+							<a href="http://baike.baidu.com/item/%E4%BB%93%E5%A4%AE%E5%98%89%E6%8E%AA/908492" target="_blank">仓央嘉措</a>
+						</li>
+						<li>
+							<a href="http://baike.baidu.com/item/%E6%9D%8E%E7%99%BD/1043" target="_blank">李白</a>
+						</li>
+						<li>
+							<a href="http://baike.baidu.com/item/%E6%9D%9C%E7%94%AB/63508" target="_blank">杜甫</a>
+						</li>
+						<li>
+							<a href="http://baike.baidu.com/item/%E5%AD%9F%E6%B5%A9%E7%84%B6/28158" target="_blank">孟浩然</a>
+						</li>
+						<li>
+							<a href="http://baike.baidu.com/view/2134.htm" target="_blank">柳永</a>
+						</li>
+						<li>
+							<a href="http://baike.baidu.com/view/7323.htm" target="_blank">元稹</a>
+						</li>
+					</ul>
+				</li>
+				<li class="wow fadeInDown" data-wow-delay="1s">
+					<a href="#">关于我们</a>
+					<ul class="shici">
+						<li><a href="index.html">古诗词文化</a></li>
+						<li><a href="html/fourFamous.html">四大名著</a></li>
+					</ul>
+				</li>
+				<li class="wow fadeInDown" data-wow-delay="1s">
+					<a href="#">联系我们</a>
+				</li>
+				<li class="msg">此网站为观赏性网站，无需注册登录，如有雷同，纯属巧合</li>
+				
+				<!--提示信息的jQuery代码-->
+				<script type="text/javascript">
+					$(function() {
+						$(".msg").delay(2000).fadeOut(1000);
+					});
+				</script>
+				<!--提示信息的jQuery代码结束-->
+				
+				
+				
+			</ul>
+			
+		</div>
+
+		<script type="text/javascript">
+			$(function() {
+				$(".nav>ul>li").hover(function() {
+					$(this).children("ul").slideToggle();
+				});
+			});
+		</script>
+		<!--nav 结束-->
+
+		<!--内容开始-->
+		<div id="dowebok">
+			<div class="section">
+				<!--swiper-->
+				<div class="swiper-container" >
+					<div class="swiper-wrapper ">
+						<div class="swiper-slide  wow bounceInLeft" data-wow-duration="5s" data-wow-delay="8s">
+							<a href="http://baike.baidu.com/view/6078180.htm" target="_blank"><img src="img/book1.jpg" title="仓央嘉措诗集" /></a>
+						</div>
+						<div class="swiper-slide wow bounceInLeft" data-wow-duration="5s" data-wow-delay="7s">
+							<a href="http://baike.baidu.com/view/319268.htm" target="_blank"><img src="img/book2.jpg" title="李白诗集" /></a>
+						</div>
+						<div class="swiper-slide wow bounceInLeft" data-wow-duration="5s" data-wow-delay="6s">
+							<a href="http://baike.baidu.com/view/189009.htm" target="_blank"><img src="img/book3.jpg" title="杜甫诗集" /></a>
+						</div>
+						<div class="swiper-slide wow bounceInLeft" data-wow-duration="5s" data-wow-delay="5s">
+							<a href="http://baike.baidu.com/view/5082881.htm" target="_blank"><img src="img/book4.jpg" title="柳永词集" /></a>
+						</div>
+						<div class="swiper-slide wow bounceInLeft" data-wow-duration="5s" data-wow-delay="4s">
+							<a href="http://baike.baidu.com/view/36144.htm" target="_blank"><img src="img/book5.jpg" title="孟浩然诗集" /></a>
+						</div>
+						<div class="swiper-slide wow bounceInLeft" data-wow-duration="5s" data-wow-delay="3s">
+							<a href="http://baike.baidu.com/view/7323.htm" target="_blank"><img src="img/book7.jpg" title="元稹诗词" /></a>
+
+						</div>
+						<div class="swiper-slide wow bounceInLeft" data-wow-duration="5s" data-wow-delay="2s">
+							<a href="http://baike.baidu.com/item/%E5%94%90%E8%AF%97%E4%B8%89%E7%99%BE%E9%A6%96/18677" target="_blank"><img src="img/book6.jpg" title="唐诗三百首" /></a>
+						</div>
+						<!-- Add Scrollbar -->
+						<div class="swiper-scrollbar"></div>
+					</div>
+
+					<!-- Swiper JS -->
+					<script src="js/swiper.min.js"></script>
+
+					<!-- Initialize Swiper -->
+					<script>
+						var swiper = new Swiper('.swiper-container', {
+							scrollbar: '.swiper-scrollbar',
+							scrollbarHide: true,
+							slidesPerView: 'auto',
+							centeredSlides: true,
+							spaceBetween: 30,
+							grabCursor: true
+						});
+					</script>
+
+					<!--swiper 结束-->
+				</div>
+			</div>
+			<div class="section section2">
+				<p class="lisi_01"><span class="lisi_05">曾</span>
+					<span>经</span>
+					<span>沧</span>
+					<span>海</span>
+					<span>难</span>
+					<span>为</span>
+					<span>水</span></p>
+				<p class="lisi_02"><span>除</span>
+					<span>却</span>
+					<span>巫</span>
+					<span>山</span>
+					<span>不</span>
+					<span>是</span>
+					<span>云</span></p>
+				<p class="lisi_03"><span>取</span>
+					<span>次</span>
+					<span>花</span>
+					<span>丛</span>
+					<span>懒</span>
+					<span>回</span>
+					<span>顾</span></p>
+				<p class="lisi_04"><span>半</span>
+					<span>缘</span>
+					<span>修</span>
+					<span>道</span>
+					<span>半</span>
+					<span>缘</span>
+					<span>君</span></p>
+				<p class="lisi_05 writer"><span>元</span><span>稹</span></p>
+				<p class="lisi_06"><span>离</span><span>思</span></p>
+			</div>
+			<div class="section section3">
+
+				<p class="dlh_01"><span>衣</span>
+					<span>带</span>
+					<span>渐</span>
+					<span>宽</span>
+					<span>终</span>
+					<span>不</span>
+					<span>悔</span></p>
+				<p class="dlh_02"><span>为</span>
+					<span>伊</span>
+					<span>消</span>
+					<span>得</span>
+					<span>人</span>
+					<span>憔</span>
+					<span>悴</span></p>
+				<p class="dlh_03 writer"><span>柳</span><span>永</span></p>
+				<p class="dlh_04"><span>蝶</span>
+					<span>恋</span>
+					<span>花</span></p>
+			</div>
+			<div class="section section4">
+				<p></p>
+				<p></p>
+				<p style="margin-left: 100px;" class="love_01"><span>曾</span>
+					<span>虑</span>
+					<span>多</span>
+					<span>情</span>
+					<span>损</span>
+					<span>梵</span>
+					<span>行</span></p>
+				<p class="love_02"><span>入</span>
+					<span>山</span>
+					<span>又</span>
+					<span>恐</span>
+					<span>别</span>
+					<span>倾</span>
+					<span>城</span></p>
+				<p class="love_03"><span>世</span>
+					<span>间</span>
+					<span>安</span>
+					<span>得</span>
+					<span>双</span>
+					<span>全</span>
+					<span>法</span></p>
+				<p class="love_04" style="margin-top: 0;"><span>不</span>
+					<span>负</span>
+					<span>如</span>
+					<span>来</span>
+					<span>不</span>
+					<span>负</span>
+					<span>卿</span></p>
+				<p class="love_05 writer"><span>仓</span>
+					<span>央</span>
+					<span>嘉</span>
+					<span>措</span></p>
+			</div>
+		</div>
+
+		<!--内容结束-->
+
+		<!--footer 开始-->
+		<div class="footer wow bounceInUp">
+			<p class="wow fadeInUp" data-wow-delay="1s">&copy; 2016 &nbsp;&nbsp;中国古文化网 &nbsp;&nbsp;版权归我所有</p>
+			<p class="wow fadeInUp" data-wow-delay="1s">感谢百度百科提供的资源与素材</p>
+		</div>
+
+		<!--footer 结束-->
+
+		<!--bgm 开始-->
+		<audio src="css/bgm.mp3" autoplay></audio>
+		<!--bgm 结束-->
+		
+		<!--回到顶部-->
+		<!--<div class="gotop" style="width: 50px;height: 50px;">
+			TOP
+		</div>-->
+		<!--回到顶部结束-->
+		
+		<!--登录注册开始-->
+		<div id="" class="loginContent">
+			<div id="">
+				真的不用登陆
+			</div>
+		</div>
+		
+		<script type="text/javascript">
+			$(function(){
+				$(".login").on("click",function(){
+					$(".loginContent").fadeIn(500);
+				});
+				$(".loginContent").on("click",function(){
+					$(this).css("display","none");
+				});
+			});
+		</script>
+		<!--登录注册结束-->
+	</body>
+	<script type="text/javascript">
+		new WOW().init();
+	</script>
+
+</html>

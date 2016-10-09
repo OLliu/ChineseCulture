@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			p{
+				padding: 5px 10px;
+				background:#000;
+				color: #fff;
+				float: left;
+				margin-left:20px;
+				cursor: pointer;
+			}
+			audio{
+				width: 500px;
+				height: 50px;
+				margin-left:50px;
+			}
+		</style>
+		<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+	</head>
+	<body>
+		<p class="one">灯火</p>
+		<p class="two">Say Something</p>
+		<p class="three">Someone Like You</p>
+		<audio src="css/denghuo.mp3" controls="controls" autoplay="autoplay"></audio>
+	</body>
+	<script type="text/javascript">
+		$(function(){
+			$("p").click(function(){
+				$(this).css("background","skyblue");
+				$(this).prevAll().css("background","#000000");
+				$(this).nextAll().css("background","#000000");
+			});
+			$(".one").on("click",function(){
+				$("audio").prop("src","css/denghuo.mp3");
+			});
+			$(".two").on("click",function(){
+				$("audio").prop("src","css/Say Something.mp3");
+			});
+			$(".three").on("click",function(){
+				$("audio").prop("src","css/Someone Like You.mp3");
+			});
+		})
+	</script>
+</html>

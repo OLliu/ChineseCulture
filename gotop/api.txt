@@ -1,0 +1,7 @@
+1. 连入jQuery
+
+2. 连入gotop.js
+
+3. 在点击回到顶部得元素加 class gotop
+
+4 .写入js  $("...").goTop(); 

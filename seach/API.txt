@@ -1,0 +1,4 @@
+1.连入jQuery
+2.连入seach.js
+3.在固定得元素上添加class  seach
+4.写入js 调用 Seach() 方法
